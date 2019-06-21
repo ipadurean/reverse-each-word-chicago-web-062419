@@ -5,3 +5,11 @@ def reverse_each_word(string)
   end
   newStr.join(" ")
 end
+
+def reverse_each_word(string)
+  var = string.split(" ")
+  var.collect do
+    |el| el.reverse!
+    var.join(" ")
+  end
+end
